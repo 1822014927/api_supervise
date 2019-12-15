@@ -27,7 +27,10 @@ class ErrorCodeRequest extends FormRequest
     {
         return [
             //2.错误码设置
+<<<<<<< HEAD
             'm_id'          =>  'required',
+=======
+>>>>>>> myxy99/master
             'error_code'    =>  'required',
             'error_info'    =>  'required|between:2,65',
             'http_code'     =>  'required|between:2,4'

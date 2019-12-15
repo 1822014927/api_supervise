@@ -53,9 +53,13 @@ class ModuleSettingController extends Controller
     //删除模块
     public function deModule(Request $request)
     {
+<<<<<<< HEAD
         $m_id = $request->validate([
            'm_id' => 'required'
         ]);
+=======
+        $m_id = $request['m_id'];
+>>>>>>> myxy99/master
         $module = ProjectModule::deModuleMethod($m_id);
         return $module != null ?
             response()->success(200, '删除模块设置成功') :

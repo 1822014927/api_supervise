@@ -44,9 +44,13 @@ class ErrorCodeSettingController extends Controller
     }
     //删除错误码
     public function deErrorCode(Request $request){
+<<<<<<< HEAD
         $m_id = $request->validate([
             'm_id' => 'required'
         ]);
+=======
+        $m_id = $request['m_id'];
+>>>>>>> myxy99/master
         $error = Error::deErrorCodeMethod($m_id);
         return $error != null ?
             response()->success(200,'删除错误码设置成功'):

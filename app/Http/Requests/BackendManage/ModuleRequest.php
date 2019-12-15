@@ -27,7 +27,10 @@ class ModuleRequest extends FormRequest
     {
         return [
             //module、errorcode验证
+<<<<<<< HEAD
             'm_id' => 'required',
+=======
+>>>>>>> myxy99/master
             'modules_name' => 'required|string|max:60',
             'utility' => 'required|string|max:60',
             'class_name' => 'required|string|between:4,40',
